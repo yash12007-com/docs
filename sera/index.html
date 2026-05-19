@@ -3,333 +3,678 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation of Sera Antivirus</title>
+    <title>Sera Antivirus Documentation | Yash12007</title>
+    
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Yash Bodhe, Yash12007">
+    <link rel="canonical" href="https://docs.yash12007.com/sera/">
     <link rel="manifest" href="https://docs.yash12007.com/manifest.json">
-    <meta name="twitter:title" content="Yash12007 Docs">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="Sera Antivirus is an advanced cybersecurity solution...">
-    <meta name="twitter:image" content="https://www.yash12007.com/192x192.png">
-    <meta name="apple-mobile-web-app-title" content="Yash12007 Docs">
-    <meta name="description" content="Sera Antivirus: real-time malware protection, system optimization, and advanced security for Windows. Built by Yash12007">
+    <meta name="description" content="Official documentation for Sera Antivirus. Explore advanced real-time malware protection, ransomware defense, device optimization, and file migration tools built by Yash12007.">
     <meta name="keywords" content="Sera Antivirus, antivirus software, cybersecurity tool, malware protection, real-time protection, system optimizer, threat detection engine, Windows security software, device performance optimization, ransomware protection, trojan detection, Yash12007 software">
-    <meta property="og:title" content="Yash12007 Docs">
-    <meta property="og:site_name" content="Yash12007 Docs">
+
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://docs.yash12007.com/sera/">
-    <meta property="og:description" content="Sera Antivirus is an advanced cybersecurity solution offering real-time malware detection and system optimization.">
-    <meta property="og:image" content="https://www.yash12007.com/192x192.png">
+    <meta property="og:title" content="Sera Antivirus Documentation - Yash12007 Docs">
+    <meta property="og:description" content="Discover how Sera Antivirus delivers real-time threat detection, advanced file migration, and deep system performance optimization for Windows.">
+    <meta property="og:image" content="https://www.yash12007.com/Sera/Sera.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="192">
-    <meta property="og:image:height" content="192">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Yash12007 Docs">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://docs.yash12007.com/sera/">
+    <meta name="twitter:title" content="Sera Antivirus Documentation - Yash12007 Docs">
+    <meta name="twitter:description" content="Learn about Sera Antivirus's real-time security algorithms, built-in migration mechanics, and performance optimizations.">
+    <meta name="twitter:image" content="https://www.yash12007.com/Sera/Sera.png">
+    <meta name="twitter:creator" content="@_Yash12007_">
+
     <link rel="shortcut icon" href="https://www.yash12007.com/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.yash12007.com/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="https://www.yash12007.com/favicon.svg">
     <link rel="apple-touch-icon" href="https://www.yash12007.com/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Yash12007 Docs">
     <meta name="msapplication-TileImage" content="https://www.yash12007.com/192x192.png">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/svg+xml" href="https://www.yash12007.com/favicon.svg">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://www.yash12007.com/favicon-96x96.png">
-    <link rel="canonical" href="https://docs.yash12007.com/sera/"/>
+
     <link rel="me" href="https://twitter.com/_Yash12007_">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Yash Bodhe, Yash12007">
+
     <link rel="dns-prefetch" href="https://www.yash12007.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
     <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.js"></script>
     <link rel="preload" onload="this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.css" as="style">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.css"></noscript>
+
     <style>
-        ::-webkit-scrollbar{width: 0px; height: 0px;}
-        body{
-            background: #000;
-            color: #fff;
-            font-family: system-ui, sans-serif;
-            overflow: auto;
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --accent-color: #00eeff;
+            --surface-color: #111111;
+            --border-color: rgba(238, 227, 227, 0.2);
+            --border-hover: rgba(0, 238, 255, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-color);
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             font-size: 0.95rem;
-            width: 100vw;
-            height: 100vh;
-            margin: 0px;
-            padding: 0px;
-        }html{scroll-behavior: smooth;}
-        p{line-height: 1.6;}
-        nav{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #ccc;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #00bacc;
+        }
+
+        /* Fixed Navigation Layout */
+        nav {
             display: flex;
-            place-items: center;
+            align-items: center;
             justify-content: space-between;
             position: fixed;
-            top: 0px;
-            left: 0px;
-            width: calc(100% - 20px);
-            height: 30px;
-            padding: 10px;
-            border-bottom: 1px solid #fff;
-            background: #000;
-            z-index: 1000;
-        }.hero{
-            width: calc(100% - 40px);
-            padding: 20px;
-            min-height: auto;
-            max-width: 900px;
-            margin: 60px auto;
-            content-visibility: auto;
-            contain-intrinsic-size: 1px 1000px;
-        }table{
-            margin: 10px;
-            border: 2px solid #eee3;
-            border-collapse: collapse;
-            width: fit-content;
-        }table thead th{
-            background: #222;
-            font-weight: 800;
-            border: 1px solid #eee3;
-            padding: 10px;
-        }td{
-            border: 1px solid #eee3;
-            padding: 10px;
-        }a{text-decoration: none; color: #0ef;}
-        main{
-            margin: 10px;
-        }footer{
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 50px;
-            border-top: 1px solid #eee7;
-        }footer a{color: #eee; margin: 3px; font-size: 0.7rem;}#mediaPics img{
+            height: 55px;
+            padding: 0 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+        }
+
+        .nav-logo-zone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo-zone img {
+            border-radius: 50%;
+        }
+
+        /* Main Content Container */
+        main {
+            width: 100%;
+            max-width: 940px;
+            margin: 80px auto 40px auto;
+            padding: 0 20px;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            opacity: 0.7;
+            color: var(--text-color);
+        }
+
+        .breadcrumb a:hover {
+            opacity: 1;
+            color: var(--accent-color);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 10px 0;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: #888;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        /* Branding Object Wrapper */
+        .brand-showcase {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
             width: fit-content;
+            margin: 20px 0;
+        }
+
+        .brand-showcase img {
+            border-radius: 1rem;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Call To Action Buttons */
+        .cta-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border: 2px solid var(--accent-color);
+            background: var(--accent-color);
+            color: #000;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--accent-color);
+            box-shadow: 0 0 15px rgba(0, 238, 255, 0.3);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            border-radius: 8px;
+            font-weight: 600;
+            background: transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 238, 255, 0.05);
+            box-shadow: 0 0 15px rgba(0, 238, 255, 0.1);
+        }
+
+        /* Structured Data Documentation Tables */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        table thead th {
+            background: #1a1a1a;
+            font-weight: 800;
+            border-bottom: 2px solid var(--border-color);
+            padding: 12px 16px;
+        }
+
+        table tbody td {
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 16px;
+        }
+
+        table tbody tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Features List block */
+        .features-list {
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .features-list li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Media Carousel Viewports */
+        .media-gallery {
+            width: 100%;
+            margin: 30px 0;
+            gap: 15px;
+            background: var(--surface-color);
+            padding: 20px;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            scroll-snap-type: x mandatory;
+        }
+
+        .media-gallery img {
+            width: 280px;
+            height: auto;
+            border-radius: 0.75rem;
             cursor: pointer;
-        }.social{margin: 10px; box-shadow: 0 0 10px 1px #ccc; display: flex; place-items: center; justify-content: center; width:30px; height: 30px; border-radius: 50%;}tr:nth-child(even){
-            background: #111;
-        }#tags li{list-style: none; background: #222; padding: 10px; border-radius: 10px;}
-        .flex-center {
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            border: 2px solid transparent;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+        }
+
+        .media-gallery img:hover {
+            transform: scale(1.02);
+            border-color: var(--accent-color);
+        }
+
+        lite-youtube {
+            border-radius: 1rem;
+            max-width: 100%;
+            width: 100%;
+            margin: 30px auto;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Interactive Custom Glossaries */
+        .ref {
+            position: relative;
+            border-bottom: 1px dotted var(--accent-color);
+            cursor: help;
+        }
+
+        .ref::after {
+            content: attr(data-def);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1c1c1e;
+            color: #fff;
+            padding: 8px 12px;
+            font-size: 0.8rem;
+            white-space: normal;
+            width: 220px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            z-index: 10;
+        }
+
+        .ref:hover::after {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-4px);
+        }
+
+        /* Tech Badges / Tags */
+        .tag-cloud {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 20px 0 40px 0;
+        }
+
+        .tag-cloud li {
+            list-style: none;
+            background: var(--surface-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid var(--border-color);
+            color: #aaa;
+        }
+
+        /* Footer Infrastructure */
+        footer {
+            width: 100%;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+
+        .footer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .footer-social-strip {
             display: flex;
             align-items: center;
             justify-content: center;
-        }.breadcrumb a {opacity: 0.7;}
-        .breadcrumb a:hover {opacity: 1;}
-        lite-youtube {
-            margin: 20px auto;
-            display: block;
-            max-width: 800px;
-        }h2, h3, h4 {margin-top: 40px;}
-        .ref{
-            position: relative;
-            border-bottom: 1px dotted #0ef;
-            cursor: help;
-        }.ref::after {
-            content: attr(data-def);
-            position: absolute;
-            bottom: 120%;
-            left: 0;
-            background: #111;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
             color: #fff;
-            padding: 6px 10px;
+            transition: all 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+
+        .footer-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 25px;
+            text-align: center;
             font-size: 0.8rem;
-            white-space: nowrap;
-            border-radius: 6px;
-            opacity: 0;
-            pointer-events: none;
-            transition: 0.2s;
-        }.ref:hover::after {opacity: 1;}
+            margin-bottom: 40px;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-col a {
+            color: #aaa;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright-text {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        h2, h3, h4 {
+            color: #fff;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
     </style>
+
     <script type="application/ld+json">
-        [
-            {
-                "@context": "https://schema.org",
-                "@type": "TechArticle",
-                "headline": "Sera Antivirus",
-                "description": "Learn about Sera Antivirus, its real-time protection, malware detection, and advanced security features.",
-                "image": "https://www.yash12007.com/Sera/Sera.png",
-                "author": {
-                    "@type": "Person",
-                    "name": "Yash Bodhe",
-                    "url": "https://yashbodhe.link"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "Yash12007",
-                    "url": "https://yash12007.com/",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://www.yash12007.com/192x192.png"
-                        }
-                },
-                "mainEntityOfPage": {
-                        "@type": "WebPage",
-                        "@id": "https://docs.yash12007.com/sera/"
-                },
-                "datePublished": "2026-05-11T00:00:00+05:30",
-                "dateModified": "2026-05-12T00:00:00+05:30",
-                "keywords": [
-                    "Sera Antivirus",
-                    "malware protection",
-                    "cybersecurity",
-                    "real-time protection",
-                    "antivirus software"
-                ]
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "Sera Antivirus Documentation & Feature Overview",
+            "description": "Learn about Sera Antivirus, its real-time protection, malware detection algorithms, and system optimization layers.",
+            "image": "https://www.yash12007.com/Sera/Sera.png",
+            "author": {
+                "@type": "Person",
+                "name": "Yash Bodhe",
+                "url": "https://yashbodhe.link"
             },
-            {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Docs",
-                        "item": "https://docs.yash12007.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Sera Antivirus",
-                        "item": "https://docs.yash12007.com/sera/"
-                    }
-                ]
+            "publisher": {
+                "@type": "Organization",
+                "name": "Yash12007",
+                "url": "https://yash12007.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.yash12007.com/192x192.png"
+                }
             },
-            {
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": [{
-                    "@type": "Question",
-                    "name": "Is Sera Antivirus free?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sera Antivirus offers paid plans starting from $2.5."
-                    }
-                }]
-            }
-        ]
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://docs.yash12007.com/sera/"
+            },
+            "datePublished": "2026-05-11T00:00:00+05:30",
+            "dateModified": "2026-05-12T00:00:00+05:30",
+            "keywords": "Sera Antivirus, malware protection, cybersecurity, real-time protection, antivirus software"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Docs",
+                    "item": "https://docs.yash12007.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Sera Antivirus",
+                    "item": "https://docs.yash12007.com/sera/"
+                }
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "Is Sera Antivirus free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sera Antivirus offers premium protection plans starting from a base tier of $2.5."
+                }
+            }]
+        }
+    ]
     </script>
 </head>
 <body>
-    <main>
-        <header>
-            <nav aria-label="Main navigation">
-                <div style="display: flex; place-items: center; justify-content: start; gap: 5px;">
-                    <img src="https://www.yash12007.com/192x192.png" loading="eager" fetchpriority="high" alt="Yash12007 | Logo" width="30" height="30" style="border-radius: 50%;">
-                    <span style="font-weight: 800;">| Documentation</span>
-                </div>
-            </nav>
-        </header>
-        <div class="hero">
-            <p class="breadcrumb"><a href="https://docs.yash12007.com" target="_blank">Docs</a> > <a href="https://docs.yash12007.com/sera" target="_self">Sera Antivirus</a></p>
-            <h1>Sera Antivirus | Overview</h1>
-            <p>Smart Antivirus Protection for your loved ones</p>
-            <div class="flex-center" style="margin: 10px; flex-direction: column; gap: 10px; padding: 10px; background: #222; border: 1px solid #ccc7; border-radius: 1rem; width: fit-content; height: fit-content;">
-                <img loading="eager" fetchpriority="high" src="https://www.yash12007.com/Sera/Sera.png" alt="Sera Antivirus logo antivirus security software" width="200" height="200" style="border-radius: 1rem;">
-                <p>Sera Antivirus | Logo</p>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-logo-zone">
+                <img src="https://www.yash12007.com/192x192.png" alt="Yash12007 Logo" width="30" height="30">
+                <span style="font-weight: 800; letter-spacing: 0.05em;">YASH12007 | DOCS</span>
             </div>
-            <div style="width: 100%; display: flex; place-items: start; justify-content: start;">
-                <a aria-label="Download Sera Antivirus" href="https://www.yash12007.com/Sera/?page=download&ref=docs.yash12007.com/sera" target="_blank" rel="noopener noreferrer" style="display: flex; place-items: center; justify-content: space-between; gap: 10px; padding:10px 20px; border: 2px solid #0ef; background:#0ef;color:#000;border-radius:8px;font-weight:600; margin: 10px;">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://docs.yash12007.com" target="_blank">Docs</a> &gt; 
+            <a href="https://docs.yash12007.com/sera" target="_self">Sera Antivirus</a>
+        </div>
+
+        <section id="overview">
+            <h1>Sera Antivirus Overview</h1>
+            <p class="hero-subtitle">Smart, lightweight threat protection and performance management for modern systems.</p>
+            
+            <div class="brand-showcase">
+                <img src="https://www.yash12007.com/Sera/Sera.png" alt="Sera Antivirus Brand Shield" width="200" height="200" fetchpriority="high">
+                <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #888;">Sera Antivirus Engine</p>
+            </div>
+
+            <div class="cta-container">
+                <a aria-label="Download Sera Antivirus v3.0" href="https://www.yash12007.com/Sera/?page=download&ref=docs.yash12007.com/sera" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                         <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
                         <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
                     </svg>
-                    SERA 3.0
+                    DOWNLOAD SERA 3.0
                 </a>
-                <a aria-label="Subscribe to Sera Antivirus" href="https://www.yash12007.com/Sera/?page=subscribe" target="_blank" rel="noopener noreferrer" style="padding: 10px 20px; border: 2px solid #0ef; border-radius: 10px; margin: 10px;">Subscribe today!</a>
+                <a aria-label="Subscribe to Sera Antivirus Premium" href="https://www.yash12007.com/Sera/?page=subscribe" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                    Subscribe Today
+                </a>
             </div>
+
             <div>
-                <p><a href="https://docs.yash12007.com/sera/" class="ref">Sera Antivirus</a> is a powerful and user-friendly antivirus solution designed to protect your devices from various cyber threats such as <abbr title="Malware (malicious software) is any program intentionally designed to disrupt, damage, or gain unauthorized access to computer systems, networks, or devices">malware</abbr>, <abbr title=" a type of malicious software (malware) disguised as legitimate, harmless software to trick users into installing it">trojans</abbr>, and <abbr title="Ransomware is a type of malicious software (malware) that encrypts a victim's data or locks them out of their systems, demanding payment—often in cryptocurrency—to restore access.">ransomware</abbr>. Sera Antivirus uses the smartest algorithm to detect the <abbr title="Malicious threats (malware) refer to segments of code within a running process that execute harmful actions, such as data theft or unauthorized access, often utilizing techniques like remote thread injection to hide inside legitimate software">threats</abbr> and allows users to decide whether an application is trusted and remove it if necessary. Sera has a built-in files/folders <abbr title="Moving or transferring files from one destination to another">migration</abbr> system to migrate/move all files and folders selected by the user to the specified path/location according to user preferences. Each migration can be customized to meet the specific needs of the user and takes minimum time to migrate by removing unnecessary <abbr title="Processes occur in computers by applications/software or drivers">tasks</abbr> and uses. The most useful function in Sera is the <abbr title=" improves performance, speed, and battery life by clearing cache, managing storage, and closing background apps">Device optimisation</abbr>, Sera Antivirus has a feature called device optimisation that removes all unnecessary cached data and optimizes the performance of your device by removing temporary files and turning off or restart all current processes without shutting down the device.</p>
-                <p>The feature Battery monitor and data monitor are usual features in Sera Antivirus, with minimal processes to check instead of running a full diagnosis. This feature uses very adaptive memory to keep your device calm while performing these actions without opening any other apps until the other tasks in Sera Antivirus are complete.</p>
-                <p>Sera Antivirus is developed by <a href="https://www.yash12007.com/yashbodhe" class="ref">Yash Bodhe</a>, Programmer, <abbr title="A person who runs one or many businesses">entrepreneur</abbr>, and founder <a href="https://www.yash12007.com" class="ref">Yash12007</a>. The rights of the Project Sera are given to the organisation Yash12007 by <a href="https://yashbodhe.link" class="ref">Yash Bodhe</a>. The software Sera Antivirus comes with an installer (dedicated system installer) to install on your device in your desired language. The software does support only English (EN). The approximate size of Sera Antivirus is <abbr title="Unit to measure size of Data">170 Megabytes (170 MB)</abbr>. The software has license given by the <a href="https://www.kaggle.com/yashbodheofc" class="ref">developer</a>, <a href="https://www.linkedin.com/in/yash12007" class="ref">programmer</a>, and founder of Yash12007 is Proprietary.</p>
+                <p>
+                    <a href="https://docs.yash12007.com/sera/" class="ref" data-def="Sera Antivirus is an ecosystem designed to isolate vulnerabilities, eliminate exploits, and control threat metrics.">Sera Antivirus</a> 
+                    is an optimized security framework engineered to neutralize modern computational vectors like 
+                    <span class="ref" data-def="Malicious software intentionally created to corrupt, disrupt, exploit, or leak private architecture data without user consent.">malware</span>, 
+                    <span class="ref" data-def="A destructive program payload masked inside non-threatening code files to gain deep system access.">trojans</span>, 
+                    and <span class="ref" data-def="High-risk encryption vectors that hijack execution systems and lock memory systems until specific external payouts are fulfilled.">ransomware</span>. 
+                    Utilizing runtime intelligence algorithms, Sera isolates rogue execution branches, tracks file allocations, and allows complete administrative control over third-party application trust boundaries.
+                </p>
+                <p>
+                    Beyond algorithmic defensive security layers, the suite incorporates a low-overhead file migration controller. This utility automates bulk system object updates across custom data paths while suppressing active interrupts and idle thread processes to preserve maximum disk I/O throughput. 
+                    Complementing this is the core Device Optimization module—an integrated tool engineered to purge stale cache indices, release ephemeral system logs, and cycle dormant execution rings without initiating full hardware reboots.
+                </p>
+                <p>
+                    To ensure hardware stability, Sera features adaptive tracking monitors for power allocations and network throughput. These tasks rely on localized execution contexts to analyze performance pools without introducing thread thrashing or scheduling delay penalties.
+                </p>
+                <p>
+                    Sera Antivirus is designed and developed by <a href="https://www.yash12007.com/yashbodhe">Yash Bodhe</a>, and all distribution rights are administered via the <a href="https://www.yash12007.com">Yash12007</a> organizational foundation. The distribution includes a language-localized deployment installer operating natively in English (EN). The binary payload measures approximately 170 MB and is licensed under a proprietary software agreement.
+                </p>
             </div>
-            <br>
-            <h2>What is Sera Antivirus?</h2>
-            <p>Details covered in this article</p>
+        </section>
+
+        <section id="specifications">
+            <h2>Technical Specifications</h2>
+            <p>System configuration parameters and package architecture definitions:</p>
+            
+            <div class="table-responsive">
                 <table> 
                     <thead>
                         <tr>
-                            <th>Attributes</th> 
-                            <th>Values</th>
+                            <th>System Attribute</th> 
+                            <th>Technical Metric / Value</th>
                         </tr>
                     </thead> 
                     <tbody> 
                         <tr> 
-                            <td>Developer</td> 
+                            <td><strong>Lead Architect</strong></td> 
                             <td>Yash Bodhe</td> 
                         </tr> 
                         <tr> 
-                            <td>Organisation</td> 
+                            <td><strong>Parent Organization</strong></td> 
                             <td>Yash12007</td> 
                         </tr> 
                         <tr> 
-                            <td>type</td> 
-                            <td>Software</td> 
+                            <td><strong>Deployment Classification</strong></td> 
+                            <td>Software Suite</td> 
                         </tr> 
                         <tr> 
-                            <td>Category</td> 
-                            <td>Antivirus</td> 
+                            <td><strong>Domain Vertical</strong></td> 
+                            <td>Cybersecurity / Antivirus Engine</td> 
                         </tr> 
                         <tr> 
-                            <td>Version</td> 
+                            <td><strong>Production Build Version</strong></td> 
                             <td>3.0.0</td> 
                         </tr> 
                         <tr> 
-                            <td>License</td> 
+                            <td><strong>License Model</strong></td> 
                             <td>Proprietary</td> 
                         </tr> 
                         <tr> 
-                            <td>Size</td> 
-                            <td>170 MB</td> 
+                            <td><strong>Package Volume Size</strong></td> 
+                            <td>170 Megabytes (MB)</td> 
                         </tr> 
                         <tr> 
-                            <td>Installer</td> 
-                            <td>Yes (Dedicated system installer)</td> 
+                            <td><strong>Installation Framework</strong></td> 
+                            <td>Dedicated Independent Setup Executable</td> 
                         </tr> 
                         <tr> 
-                            <td>Supported Languages</td> 
+                            <td><strong>Localization Language</strong></td> 
                             <td>English (EN)</td> 
                         </tr> 
                         <tr> 
-                            <td>Price</td> 
-                            <td>$30 (tier starts from $2.5)</td> 
+                            <td><strong>Pricing Tiers</strong></td> 
+                            <td>Full License: $30 (Sub-modules starting from $2.5)</td> 
                         </tr> 
                         <tr> 
-                            <td>Website</td> 
-                            <td><a href="https://www.yash12007.com/Sera/" target="_blank" rel="noopener noreferrer">Sera Antivirus</a></td> 
+                            <td><strong>Source Matrix Link</strong></td> 
+                            <td><a href="https://www.yash12007.com/Sera/" target="_blank" rel="noopener noreferrer">Official Landing Page</a></td> 
                         </tr> 
                         <tr> 
-                            <td>Download</td> 
-                            <td><a href="https://www.yash12007.com/Sera/?page=download" target="_blank" rel="noopener noreferrer">Download Sera Antivirus</a></td> 
+                            <td><strong>Binary Mirror Path</strong></td> 
+                            <td><a href="https://www.yash12007.com/Sera/?page=download" target="_blank" rel="noopener noreferrer">Production Download Stream</a></td> 
                         </tr> 
                     </tbody> 
                 </table>
-            <br>
-            <h3>Key Features</h3>
-            <ul>
-                <li>Real-time threat detection</li>
-                <li>Device optimization engine</li>
-                <li>Battery and data monitoring</li>
-                <li>Custom file migration system</li>
+            </div>
+        </section>
+
+        <section id="features">
+            <h3>Key Capabilities</h3>
+            <ul class="features-list">
+                <li><strong>Real-Time Threat Analysis:</strong> Inline evaluation logs running inside software runtime branches to intercept processes.</li>
+                <li><strong>Optimization Core:</strong> Automates standard cleanup tasks by tracking and cleaning temporary file pools.</li>
+                <li><strong>Hardware Auditing:</strong> Inspects resource pools like data metrics and battery states without creating heavy threads.</li>
+                <li><strong>Migration Tool:</strong> Streamlined file relocations across explicit environment paths with adaptive system performance mapping.</li>
             </ul>
-            <h4>Media from the official website of Sera Antivirus</h4>
-            <lite-youtube style="aspect-ratio:16/9;border-radius:1rem;margin:10%;" videoid="TQoubmHRD1s"></lite-youtube>
-            <div id="mediaPics" style="width: 90%; margin: 10px auto; gap: 5px; background: #222; padding: 10px; border-radius: 1rem; display: flex; flex-direction: row; overflow-x: auto; height: fit-content; justify-content: space-evenly;">
-                <img fetchpriority="low" loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/splashscreen.png" alt="Sera Antivirus | Splashscreen" width="300" height="200" style="border-radius: 1rem;">
-                <img fetchpriority="low" loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/welcome.png" alt="Sera Antivirus | Welcome Screen" width="300" height="200" style="border-radius: 1rem;">
-                <img fetchpriority="low" loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/auth.png" alt="Sera Antivirus | Authentication Screen" width="300" height="200" style="border-radius: 1rem;">
-                <img fetchpriority="low" loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/main.png" alt="Sera Antivirus | Main Interface" width="300" height="200" style="border-radius: 1rem;">
+        </section>
+
+        <section id="media">
+            <h4>Official Project Media</h4>
+            <p>Video walk-throughs and interface captures from the active distribution build:</p>
+            
+            <lite-youtube videoid="TQoubmHRD1s" style="aspect-ratio:16/9;"></lite-youtube>
+            
+            <div class="media-gallery" id="mediaPics">
+                <img loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/splashscreen.png" alt="Sera Antivirus Splashscreen Panel">
+                <img loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/welcome.png" alt="Sera Antivirus Environment Configuration Welcome Window">
+                <img loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/auth.png" alt="Sera Antivirus Cryptographic License Authentication Screen">
+                <img loading="lazy" src="https://www.yash12007.com/Sera/Assets/v3.0/main.png" alt="Sera Antivirus Console Dashboard Interface">
             </div>
-            <div style="width: 100%; display: flex; place-items: center; justify-content: space-evenly;">
-                <a aria-label="Download Sera Antivirus" href="https://www.yash12007.com/Sera/?page=download&ref=docs.yash12007.com/sera" target="_blank" rel="noopener noreferrer" style="padding:10px 20px; border: 2px solid #0ef; background:#0ef;color:#000;border-radius:8px;font-weight:600; margin: 10px;">Download Sera Antivirus</a>
-                <a aria-label="Subscribe to Sera Antivirus" href="https://www.yash12007.com/Sera/?page=subscribe" target="_blank" rel="noopener noreferrer" style="padding: 10px 20px; border: 2px solid #0ef; border-radius: 10px; margin: 10px;">Subscribe today!</a>
-            </div>
-            <h5>References</h5>
+        </section>
+
+        <section id="references">
+            <h5>Reference Documentation & Resource Matrices</h5>
             <ul>
                 <li><a href="https://www.yash12007.com/Sera/" target="_blank" rel="noopener noreferrer">Sera Antivirus Official Website</a></li>
                 <li><a href="https://www.yash12007.com/Sera/?page=download" target="_blank" rel="noopener noreferrer">Download sources</a></li>
                 <li><a href="https://www.yash12007.com/Sera/?page=subscribe" target="_blank" rel="noopener noreferrer">Price details</a></li>
-                <li><a href="https://www.producthunt.com/products/sera-antivirus/" target="_blank" rel="noopener noreferrer">Product Hunt Page</a></li>
-                <li><a href="https://sourceforge.net/projects/sera/" target="_blank" rel="noopener noreferrer">SourceForge Page</a></li>
-                <li><a href="https://github.com/Yash12007/Sera" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-                <li><a href="https://www.github.com/Yash12007/Sera/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a></li>
-                <li><a href="https://www.yash12007.com/Sera/installer-exit-codes" target="_blank" rel="noopener noreferrer">Installer Exit codes</a></li>
-                <li><a href="https://yashbodhe.link" target="_blank" rel="noopener noreferrer">Yash Bodhe | Entrepreneur | Overview</a></li>
-                <li><a href="https://www.yash12007.com/yashbodhe/" target="_blank" rel="noopener noreferrer">Yash Bodhe | Portfolio Webpage</a></li>
-                <li><a href="https://www.linkedin.com/in/yash12007" target="_blank" rel="noopener noreferrer">Yash Bodhe | LinkedIn Profile</a></li>
-                <li><a href="https://www.kaggle.com/yashbodheofc" target="_blank" rel="noopener noreferrer">Yash Bodhe | Kaggle Profile</a></li>
+                <li><a href="https://www.producthunt.com/products/sera-antivirus/" target="_blank" rel="noopener noreferrer">Product Hunt Verification Matrix</a></li>
+                <li><a href="https://sourceforge.net/projects/sera/" target="_blank" rel="noopener noreferrer">SourceForge Repository Engine</a></li>
+                <li><a href="https://github.com/Yash12007/Sera" target="_blank" rel="noopener noreferrer">GitHub Repository Pipeline</a></li>
+                <li><a href="https://www.github.com/Yash12007/Sera/releases" target="_blank" rel="noopener noreferrer">GitHub Releases Archive</a></li>
+                <li><a href="https://www.yash12007.com/Sera/installer-exit-codes" target="_blank" rel="noopener noreferrer">Installer System Exit Codes Reference</a></li>
+                <li><a href="https://yashbodhe.link" target="_blank" rel="noopener noreferrer">Yash Bodhe Portfolio Hub</a></li>
             </ul>
-            <b>Tags</b>
-            <ul id="tags" style="display: flex; place-items: center; justify-content: start; gap: 5px; flex-wrap: wrap;">
+
+            <b>Document Tags</b>
+            <ul class="tag-cloud">
                 <li>Antivirus</li>
                 <li>Software</li>
                 <li>Windows</li>
@@ -342,80 +687,73 @@
                 <li>Battery Health</li>
                 <li>Battery Monitor</li>
             </ul>
-            <footer>
-                <div style="display: flex; place-items: center; justify-content: space-between;">
-                    <h6>Yash12007 | Documentation</h6>
-                    <p style="font-size: 0.7rem;">docs.yash12007.com</p>
+        </section>
+
+        <footer>
+            <div class="footer-header">
+                <h6 style="margin: 0; font-size: 0.9rem;">Yash12007 Framework Matrix</h6>
+                <p style="margin: 0; font-size: 0.75rem; color: #666;">docs.yash12007.com</p>
+            </div>
+            
+            <div class="footer-social-strip">
+                <a aria-label="Facebook Profile" href="https://www.facebook.com/yash12007" class="social-icon" style="color:#1877f2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+                </a>
+                <a aria-label="Instagram Channel" href="https://www.instagram.com/yash12007_com" class="social-icon" style="color:#f0a">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+                </a>
+                <a aria-label="LinkedIn Company Node" href="https://in.linkedin.com/company/yash12007" class="social-icon" style="color:#0ad">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+                </a>
+                <a aria-label="Twitter X Identity" href="https://x.com/_Yash12007_" class="social-icon" style="color:#fff">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
+                </a>
+                <a aria-label="YouTube Channel" href="https://www.youtube.com/@Yash12007" class="social-icon" style="color:red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
+                </a>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <a href="https://www.yash12007.com">Home</a>
+                    <a href="https://www.yash12007.com/Max/#about">About</a>
+                    <a href="https://www.yash12007.com/Max/#services">Services</a>
+                    <a href="https://www.yash12007.com/Max/contact">Contact</a>
                 </div>
-                <div class="flex-center" style="flex-wrap:wrap;max-width:100%; margin: 20px auto;">
-                    <a aria-label=Facebook href=https://www.facebook.com/yash12007 class=social style=color:#1877f2>
-                        <svg xmlns=http://www.w3.org/2000/svg width=16 height=16 fill=currentColor class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                        </svg>
-                    </a>
-                    <a aria-label=Instagram href=https://www.instagram.com/yash12007_com class=social style=color:#f0a>
-                        <svg xmlns=http://www.w3.org/2000/svg width=16 height=16 fill=currentColor class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                        </svg>
-                    </a>
-                    <a aria-label=LinkedIn href=https://in.linkedin.com/company/yash12007 class=social style=color:#0ad>
-                        <svg xmlns=http://www.w3.org/2000/svg width=16 height=16 fill=currentColor class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                        </svg>
-                    </a>
-                    <a aria-label=Twitter href=https://x.com/_Yash12007_ class=social style=color:#000>
-                        <svg xmlns=http://www.w3.org/2000/svg width=16 height=16 fill=#fff class="bi bi-twitter-x" viewBox="0 0 16 16">
-                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                        </svg>
-                    </a>
-                    <a aria-label=YouTube href=https://www.youtube.com/@Yash12007 class=social style=color:red>
-                        <svg xmlns=http://www.w3.org/2000/svg width=16 height=16 fill=currentColor class="bi bi-youtube" viewBox="0 0 16 16">
-                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                        </svg>
-                    </a>
+                <div class="footer-col">
+                    <a href="https://blog.yash12007.com">Blogs</a>
+                    <a href="https://medium.com/@Yash12007">Articles</a>
+                    <a href="https://www.github.com/Yash12007">GitHub</a>
+                    <a href="https://store.yash12007.com">Store</a>
                 </div>
-                <div style="text-align:center;font-size:.7rem;display:flex;flex-direction:row;place-items:center;justify-content:space-evenly; margin:auto; width:80vw; flex-wrap:wrap;">
-                    <div class="flex-center" style=flex-direction:column;>
-                        <a aria-label=Home href=https://www.yash12007.com>Home</a>
-                        <a aria-label=About href=https://www.yash12007.com/Max/#about>About</a>
-                        <a aria-label=Services href=https://www.yash12007.com/Max/#services>Services</a>
-                        <a aria-label=Products href=#product>Products</a>
-                        <a aria-label=Contact href=https://www.yash12007.com/Max/contact>Contact</a>
-                    </div>
-                    <div class="flex-center" style=flex-direction:column;>
-                        <a aria-label=Blogs href=https://blog.yash12007.com>Blogs</a>
-                        <a aria-label=Articles href=https://medium.com/@Yash12007>Articles</a>
-                        <a aria-label=Github href=https://www.github.com/Yash12007>GitHub</a>
-                        <a aria-label=Store href=https://store.yash12007.com>Store</a>
-                        <a aria-label=Quora href=https://yash12007ofc.quora.com>Quora</a>
-                    </div>
-                    <div class="flex-center" style=flex-direction:column;>
-                        <a aria-label="Terms and conditions" href=https://www.yash12007.com/Max/#terms-conditions>T&C</a>
-                        <a aria-label="Privacy Policy" href=https://www.yash12007.com/Max/#privacy-policy>Privacy</a>
-                        <a aria-label=Sitemap href=https://www.yash12007.com/sitemap.xml>Sitemap</a>
-                        <a aria-label="Shipping policy" href=https://www.yash12007.com/shipping-policy>shipping policy</a>
-                        <a aria-label="Return policy" href=https://www.yash12007.com/return-policy>Return Policy</a>
-                    </div>
-                    <div class="flex-center" style=flex-direction:column;>
-                        <a aria-label="Sera Antivirus" href=https://www.yash12007.com/Sera>Sera AV</a>
-                        <a aria-label="NovaStream IDE" href=https://www.yash12007.com/NovaStream>IDE</a>
-                        <a aria-label="Nexus OS" href=https://www.yash12007.com/Nexus>Nexus</a>
-                        <a aria-label="Nexus OS | Beta" href=https://www.yash12007.com/Nexus/beta>Nexus beta</a>
-                        <a aria-label="Alice AI" href=https://github.com/Yash12007/Alice_AI/blob/main/README.md>Alice AI</a>
-                    </div>
+                <div class="footer-col">
+                    <a href="https://www.yash12007.com/Max/#terms-conditions">Terms &amp; Conditions</a>
+                    <a href="https://www.yash12007.com/Max/#privacy-policy">Privacy Policy</a>
+                    <a href="https://www.yash12007.com/sitemap.xml">Sitemap</a>
+                    <a href="https://www.yash12007.com/shipping-policy">Shipping Policy</a>
                 </div>
-                <p style="width: 100%; margin: 20px auto; text-align: center; font-size: 0.7rem; color: #ccc;">&copy; 2026 Yash12007. All Rights Reserved</p>
-            </footer>
-        </div>
+                <div class="footer-col">
+                    <a href="https://www.yash12007.com/Sera">Sera AV</a>
+                    <a href="https://www.yash12007.com/NovaStream">NovaStream IDE</a>
+                    <a href="https://www.yash12007.com/Nexus">Nexus OS</a>
+                    <a href="https://github.com/Yash12007/Alice_AI/blob/main/README.md">Alice AI</a>
+                </div>
+            </div>
+            
+            <p class="copyright-text">&copy; 2026 Yash12007. All Rights Reserved.</p>
+        </footer>
     </main>
+
     <script>
-        const Cimgs = document.getElementById("mediaPics").querySelectorAll('img');
-        Cimgs.forEach(img=>{
-            img.addEventListener('click', ()=>{
-                window.open(img.src, "_blank");
+        document.addEventListener("DOMContentLoaded", function() {
+            const galleryImages = document.querySelectorAll('#mediaPics img');
+            galleryImages.forEach(img => {
+                img.removeAttribute('onclick'); // Safe fallback
+                img.addEventListener('click', () => {
+                    window.open(img.src, "_blank", "noopener,noreferrer");
+                });
             });
         });
     </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"9566e86f01df45009b8dc922ac29e934","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
