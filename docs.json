@@ -1,0 +1,31 @@
+{
+  "title": "Yash12007 Docs",
+  "subtitle": "A central index for products, platforms, and services built by Yash12007.",
+  "description": "Explore the Yash12007 ecosystem through its official product and platform documentation.",
+  "docs": [
+    {
+      "title": "Sera Antivirus",
+      "description": "Security documentation for real-time malware protection, ransomware defense, and device optimization.",
+      "category": "Security",
+      "path": "sera/"
+    },
+    {
+      "title": "Paradise SDP",
+      "description": "Technical documentation for the Software Distribution Platform, package pipeline, and deployment architecture.",
+      "category": "Platform",
+      "path": "paradise/"
+    },
+    {
+      "title": "Metrica",
+      "description": "Documentation for system performance analysis, CPU analytics, memory mapping, and process management.",
+      "category": "Utilities",
+      "path": "metrica/"
+    },
+    {
+      "title": "Certifications",
+      "description": "Certificates and verification resources from the Yash12007 ecosystem.",
+      "category": "Resources",
+      "path": "certifications/"
+    }
+  ]
+}

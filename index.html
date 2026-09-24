@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docs</title>
+    <title>Yash12007 Docs</title>
+    <link rel="shortcut icon" href="https://www.yash12007.com/favicon.ico" type="image/x-icon">
     <style>
         :root {
             --bg: #000;
@@ -11,6 +12,7 @@
             --accent: #00eeff;
             --surface: #111;
             --border: rgba(255, 255, 255, 0.1);
+            --muted: #9aa3ad;
         }
         body {
             margin: 0;
@@ -30,7 +32,7 @@
             border-bottom: 1px solid var(--border);
         }
         main {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 80px auto;
             padding: 20px;
         }
@@ -45,11 +47,15 @@
             border: 1px solid var(--border);
             border-radius: 10px;
             padding: 20px;
-            display: flex;
-            place-items: center;
-            justify-content: center;
-            width: fit-content;
+            width: 100%;
         }
+        .overview { color: var(--muted); max-width: 720px; line-height: 1.6; }
+        .doc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+        .doc-card { display: flex; flex-direction: column; gap: 12px; min-height: 150px; }
+        .doc-card h2 { margin: 0; font-size: 1.2rem; }
+        .doc-card p { color: var(--muted); line-height: 1.5; margin: 0; flex: 1; }
+        .category { color: var(--accent); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; }
+        .error { color: #ff8f8f; }
         ul {
             padding-left: 20px;
         }
@@ -79,16 +85,49 @@
     <script>
         const app = document.getElementById("app");
         const params = new URLSearchParams(window.location.search);
-        const id = params.get("id") || "index";
-        fetch(`${id}.json`)
-            .then(res => {
-                if (!res.ok) throw new Error("Doc not found");
-                return res.json();
-            })
-            .then(data => render(data))
-            .catch(err => {
-                app.innerHTML = "<h1>404 - Doc Not Found</h1>";
+        const id = params.get("id");
+
+        loadContent();
+
+        async function loadContent() {
+            try {
+                if (!id || id === "index" || id === "docs") {
+                    const response = await fetch(new URL("docs.json", document.baseURI));
+                    if (!response.ok) throw new Error("Overview not found");
+                    renderOverview(await response.json());
+                    return;
+                }
+
+                const response = await fetch(new URL(`${encodeURIComponent(id)}.json`, document.baseURI));
+                if (!response.ok) throw new Error("Document not found");
+                render(await response.json());
+            } catch (error) {
+                app.innerHTML = `<h1>Unable to load documentation</h1><p class="error">${error.message}</p>`;
+            }
+        }
+
+        function renderOverview(data) {
+            document.title = data.title;
+            app.innerHTML = `<h1>${data.title}</h1><p class="overview">${data.subtitle || data.description || ""}</p>`;
+
+            const section = document.createElement("section");
+            section.className = "section";
+            section.innerHTML = "<h2>Documentation overview</h2>";
+
+            const grid = document.createElement("div");
+            grid.className = "doc-grid";
+            (data.docs || []).forEach(doc => {
+                const card = document.createElement("article");
+                card.className = "card doc-card";
+                card.innerHTML = `<span class="category">${doc.category || "Documentation"}</span><h2></h2><p></p><a>Open documentation &rarr;</a>`;
+                card.querySelector("h2").textContent = doc.title;
+                card.querySelector("p").textContent = doc.description || "Explore this documentation.";
+                card.querySelector("a").href = new URL(doc.path, document.baseURI).href;
+                grid.appendChild(card);
             });
+            section.appendChild(grid);
+            app.appendChild(section);
+        }
         function render(data) {
             app.innerHTML = "";
             const title = document.createElement("h1");
