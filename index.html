@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+    <style>
+        :root {
+            --bg: #000;
+            --text: #fff;
+            --accent: #00eeff;
+            --surface: #111;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            margin: 0;
+            font-family: system-ui;
+            background: var(--bg);
+            color: var(--text);
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 55px;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        main {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            width: fit-content;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+        img {
+            max-width: 230px;
+            border-radius: 10px;
+        }a{color: #0ef; text-decoration: none; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://www.yash12007.com/192x192.png" alt="Yash12007 Logo" width="30" height="30" style="margin: 8px; border-radius: 50%;">
+        <strong>Yash12007 Docs</strong>
+    </nav>
+    <main id="app">
+        <h1>Loading...</h1>
+    </main>
+    <script>
+        const app = document.getElementById("app");
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id") || "index";
+        fetch(`${id}.json`)
+            .then(res => {
+                if (!res.ok) throw new Error("Doc not found");
+                return res.json();
+            })
+            .then(data => render(data))
+            .catch(err => {
+                app.innerHTML = "<h1>404 - Doc Not Found</h1>";
+            });
+        function render(data) {
+            app.innerHTML = "";
+            const title = document.createElement("h1");
+            title.textContent = data.title;
+            document.title=data.title+" Documentation";
+            app.appendChild(title);
+            if (data.subtitle) {
+                const sub = document.createElement("p");
+                sub.style.color = "#888";
+                sub.textContent = data.subtitle;
+                app.appendChild(sub);
+            }
+            data.sections.forEach((sec, index) => {
+                const wrapper = document.createElement("div");
+                wrapper.className = "section";
+                if (sec.title) {
+                    const h = document.createElement("h"+(index+1));
+                    h.textContent = sec.title;
+                    wrapper.appendChild(h);
+                }
+                const card = document.createElement("div");
+                card.className = "card";
+                switch (sec.type) {
+                    case "text":
+                        const p = document.createElement("p");
+                        p.innerHTML = sec.content.replace("\n", "<br><br>");
+                        card.appendChild(p);
+                        break;
+                    case "image":
+                        const img = document.createElement("img");
+                        img.src = sec.src;
+                        card.appendChild(img);
+                        break;
+                    case "list":
+                        const ul = document.createElement("ul");
+                        sec.items.forEach(i => {
+                            const li = document.createElement("li");
+                            li.innerHTML = i;
+                            ul.appendChild(li);
+                        });
+                        card.appendChild(ul);
+                        break;
+                    case "table":
+                        const table = document.createElement("table");
+                        const thead = document.createElement("thead");
+                        const trh = document.createElement("tr");
+                        sec.headers.forEach(h => {
+                            const th = document.createElement("th");
+                            th.textContent = h;
+                            trh.appendChild(th);
+                        });
+                        thead.appendChild(trh);
+                        table.appendChild(thead);
+                        const tbody = document.createElement("tbody");
+                        sec.rows.forEach(row => {
+                            const tr = document.createElement("tr");
+                            row.forEach(cell => {
+                                const td = document.createElement("td");
+                                td.textContent = cell;
+                                tr.appendChild(td);
+                            });
+                            tbody.appendChild(tr);
+                        });
+                        table.appendChild(tbody);
+                        card.appendChild(table);
+                        break;
+                    
+                }
+                wrapper.appendChild(card);
+                app.appendChild(wrapper);
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{
+  "title": "Sera Antivirus",
+  "subtitle": "Smart, lightweight threat protection",
+  "sections": [
+    {
+      "type": "image",
+      "src": "https://www.yash12007.com/Sera/Sera.png"
+    },
+    {
+      "type": "text",
+      "title": "Overview",
+      "content": "Sera Antivirus is an optimized security framework engineered to neutralize modern computational vectors like malware, trojans, and ransomware. Utilizing runtime intelligence algorithms, Sera isolates rogue execution branches, tracks file allocations, and allows complete administrative control over third-party application trust boundaries. \nBeyond algorithmic defensive security layers, the suite incorporates a low-overhead file migration controller. This utility automates bulk system object updates across custom data paths while suppressing active interrupts and idle thread processes to preserve maximum disk I/O throughput. Complementing this is the core Device Optimization module—an integrated tool engineered to purge stale cache indices, release ephemeral system logs, and cycle dormant execution rings without initiating full hardware reboots. \nTo ensure hardware stability, Sera features adaptive tracking monitors for power allocations and network throughput. These tasks rely on localized execution contexts to analyze performance pools without introducing thread thrashing or scheduling delay penalties. \nSera Antivirus is designed and developed by Yash Bodhe, and all distribution rights are administered via the Yash12007 organizational foundation. The distribution includes a language-localized deployment installer operating natively in English (EN). The binary payload measures approximately 170 MB and is licensed under a proprietary software agreement."
+    },
+    {
+      "type": "list",
+      "title": "Features",
+      "items": [
+        "Real-time scanning",
+        "Ransomware protection",
+        "Performance optimization"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "API",
+      "headers": ["Endpoint", "Description"],
+      "rows": [
+        ["/scan", "Scan file"],
+        ["/optimize", "Optimize system"]
+      ]
+    },
+    {
+      "type": "list",
+      "title": "References",
+      "items": [
+        "<a href='https://www.yash12007.com/Sera'>Official webpage of Sera Antivirus</a>",
+        "<a href='https://www.yash12007.com/Sera/?page=subscribe'>Price details</a>",
+        "<a href='https://www.yash12007.com/Sera/?page=download'>Download Source</a>",
+        "<a href='https://www.producthunt.com/products/sera-antivirus/'>Product Hunt Verification Matrix</a>"
+      ]
+    }
+  ]
+}
